@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import type React from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import watermarkImg from '../assets/watermark.png';
@@ -73,7 +74,7 @@ export const HeroSection: React.FC = () => {
           playsInline
           className="h-screen w-auto max-w-none object-contain origin-right scale-95 md:scale-[0.98] lg:scale-100"
         >
-          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/hero.mp4`} type="video/mp4" />
         </video>
 
         {/* Seamless Soft Left Edge Blend */}
@@ -234,7 +235,7 @@ export const HeroSection: React.FC = () => {
 
               {/* Download Resume Button */}
               <motion.a
-                href="/resume.pdf"
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onMouseEnter={() => setIsHovered(true)}

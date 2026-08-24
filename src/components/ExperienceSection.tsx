@@ -1,5 +1,6 @@
 // src/components/ExperienceSection.tsx
-import React, { useRef } from 'react';
+import type React from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface RouteStop {
