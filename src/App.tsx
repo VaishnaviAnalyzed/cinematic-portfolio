@@ -8,15 +8,21 @@ import { ContactSection } from './components/ContactSection';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-black text-[#E8DFD8] selection:bg-[#cbb59d] selection:text-black">
-      <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <SkillsSection />
-      <ExperienceSection />
-      <ContactSection />
-    </div>
+    <main className="relative min-h-screen w-full bg-black text-[#E8DFD8] selection:bg-[#cbb59d] selection:text-black overflow-x-hidden antialiased">
+      {/* Background container to prevent white flashes or layout jumps */}
+      <div className="relative z-10 flex flex-col w-full max-w-[100vw]">
+        <HeroSection />
+        <AboutSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <ContactSection />
+      </div>
+    </main>
   );
+}
+
+export default App;
 }
 
 export default App;
