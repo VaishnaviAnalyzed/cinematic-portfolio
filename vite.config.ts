@@ -1,8 +1,7 @@
-
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react' // or your standard react plugin
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/cinematic-portfolio/', // Add this exact line
   plugins: [react()],
+  base: '/cinematic-portfolio/',
 })
