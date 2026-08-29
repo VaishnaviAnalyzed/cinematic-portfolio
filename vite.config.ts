@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import tailwindcss from '@tailwindcss/vite';
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/react-swc' // or your standard react plugin
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  base: '/cinematic-portfolio/',
-});
+  base: '/cinematic-portfolio/', // Add this exact line
+  plugins: [react()],
+})
