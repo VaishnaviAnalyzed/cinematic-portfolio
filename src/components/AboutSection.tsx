@@ -70,7 +70,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section 
       id="about" 
-      className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-hidden flex items-center"
+      className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-x-hidden flex items-center"
     >
       {/* ================= BACKGROUND GLOWS & FLOATING PARTICLES ================= */}
       <motion.div 
@@ -90,7 +90,7 @@ export const AboutSection: React.FC = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           className="flex items-center space-x-4 mb-10"
         >
@@ -111,7 +111,7 @@ export const AboutSection: React.FC = () => {
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true, amount: 0.15, margin: "-100px" }}
             className="lg:col-span-7 flex flex-col justify-center"
           >
             {/* Cinematic Headline with Glow Flare */}
@@ -238,7 +238,7 @@ export const AboutSection: React.FC = () => {
               onMouseLeave={handleMouseLeave}
               initial={{ opacity: 0, scale: 0.9, y: 30 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.15 }}
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               className="relative p-3.5 border border-[#8C6D4F]/40 rounded-sm bg-[#120F0C]/80 backdrop-blur-xl shadow-[0_25px_70px_rgba(0,0,0,0.95)] cursor-pointer group transition-colors duration-500 hover:border-[#D4AF37]/80"
             >
