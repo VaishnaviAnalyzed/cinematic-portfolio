@@ -285,7 +285,7 @@ export const ProjectsSection: React.FC = () => {
                       {project.metrics.map((m) => (
                         <div
                           key={m.label}
-                          className="p-3.5 rounded-sm border border-[#8C6D4F]/25 bg-[#050403] flex items-center justify-between"
+                          className="p-3.5 rounded-sm border border-white/10 bg-white/[0.02] backdrop-blur-sm flex items-center justify-between"
                         >
                           <span className="text-[10px] font-mono text-[#A8988B]">
                             {m.label}

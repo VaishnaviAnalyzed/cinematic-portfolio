@@ -70,7 +70,7 @@ export const AboutSection: React.FC = () => {
   return (
     <section 
       id="about" 
-      className="relative w-screen min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-x-hidden flex items-center"
+      className="relative w-full min-h-screen bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black py-24 lg:py-32 px-6 sm:px-12 lg:px-20 overflow-x-hidden flex items-center"
     >
       {/* ================= BACKGROUND GLOWS & FLOATING PARTICLES ================= */}
       <motion.div 
@@ -141,10 +141,10 @@ export const AboutSection: React.FC = () => {
             {/* Concise 4-Item Achievement Metrics Grid */}
             <motion.div 
               variants={fadeUpVariants}
-              className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 pb-2 border-t border-[#8C6D4F]/25"
+              className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 pb-2 border-t border-[#8C6D4F]/25"
             >
               {/* Stat 1 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4 rounded-sm border border-white/10 bg-white/[0.02] backdrop-blur-sm">
                 <span 
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -157,7 +157,7 @@ export const AboutSection: React.FC = () => {
               </div>
 
               {/* Stat 2 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4 rounded-sm border border-white/10 bg-white/[0.02] backdrop-blur-sm">
                 <span 
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -170,7 +170,7 @@ export const AboutSection: React.FC = () => {
               </div>
 
               {/* Stat 3 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4 rounded-sm border border-white/10 bg-white/[0.02] backdrop-blur-sm">
                 <span 
                   className="text-3xl sm:text-4xl font-light text-[#F4EBE2] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -183,7 +183,7 @@ export const AboutSection: React.FC = () => {
               </div>
 
               {/* Stat 4 */}
-              <div className="flex flex-col">
+              <div className="flex flex-col p-4 rounded-sm border border-white/10 bg-white/[0.02] backdrop-blur-sm">
                 <span 
                   className="text-3xl sm:text-4xl font-light text-[#D4AF37] tracking-tight"
                   style={{ fontFamily: "'Bebas Neue', sans-serif" }}

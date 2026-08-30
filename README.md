@@ -2,11 +2,18 @@
 
 An interactive, high-performance web portfolio featuring smooth continuous scroll animations, modern bento grid layouts, and dynamic project showcases. Built with React, TypeScript, Framer Motion, and Tailwind CSS to highlight cutting-edge AI engineering, Computer Vision, and Generative AI projects.
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-D4AF37?style=for-the-badge)](https://vaishnavianalyzed.github.io/cinematic-portfolio/)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?logo=tailwind-css)
-![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite)
+![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-6.x-3178C6?logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?logo=tailwind-css)
+![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?logo=vite)
+
+---
+
+## 🌐 Live Website
+
+**👉 [https://vaishnavianalyzed.github.io/cinematic-portfolio/](https://vaishnavianalyzed.github.io/cinematic-portfolio/)**
 
 ---
 
@@ -65,6 +72,45 @@ Make sure you have **Node.js** (v18+) and **npm** installed on your system.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/VaishnaviAnalyzed/cinematic-portfolio.git](https://github.com/VaishnaviAnalyzed/cinematic-portfolio.git)
+   git clone https://github.com/VaishnaviAnalyzed/cinematic-portfolio.git
    cd cinematic-portfolio
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+
+5. **Preview production build:**
+   ```bash
+   npm run preview
+   ```
+
+---
+
+## 📁 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| React 19 | UI framework |
+| TypeScript 6 | Type safety |
+| Tailwind CSS 4 | Utility-first styling |
+| Framer Motion | Animations & transitions |
+| Vite 8 | Build tooling & dev server |
+| Lenis | Smooth scroll |
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.

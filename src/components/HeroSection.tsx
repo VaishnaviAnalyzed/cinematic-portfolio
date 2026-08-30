@@ -28,12 +28,10 @@ const fadeUpVariants: Variants = {
   },
 };
 
-const navItems = [
-  { name: 'ABOUT', href: '#about' },
-  { name: 'PROJECTS', href: '#work' },
-  { name: 'SKILLS', href: '#skills' },
-  { name: 'EXPERIENCE', href: '#experience' },
-  { name: 'CONTACT', href: '#contact' },
+const roleBadges = [
+  'AI & COMPUTER VISION ENGINEER',
+  'AGENTIC AI DEVELOPER',
+  'FULL STACK BUILDER',
 ];
 
 export const HeroSection: React.FC = () => {
@@ -49,7 +47,7 @@ export const HeroSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="relative w-screen h-screen overflow-hidden bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black cursor-none">
+    <section className="relative w-full h-screen overflow-hidden bg-black text-[#E8DFD8] font-sans selection:bg-[#cbb59d] selection:text-black cursor-none">
       {/* ================= 1. MINIMAL CUSTOM CURSOR ================= */}
       {cursorPos.x >= 0 && (
         <motion.div
@@ -108,63 +106,17 @@ export const HeroSection: React.FC = () => {
       </div>
 
       {/* ================= 4. CONTENT LAYER ================= */}
-      <div className="relative z-10 flex flex-col justify-between h-full w-full px-6 sm:px-12 lg:px-16 pt-6 pb-8 pointer-events-none">
-        
-        {/* Navigation Bar */}
-        <header className="relative flex items-center justify-between w-full pointer-events-auto">
-          <a
-            href="#"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            VAISHNAVI.
-          </a>
-
-          {/* Navigation Links */}
-          <nav
-            className="hidden md:flex items-center space-x-8 lg:space-x-10 text-[11px] tracking-[0.28em] font-light uppercase text-[#C4B5A5] absolute left-1/2 -translate-x-1/2"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
-                className="relative group py-1 transition-colors duration-300 hover:text-[#FFF5EB]"
-              >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#D4AF37]/50 transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </nav>
-
-          {/* Right Action */}
-          <a
-            href="#contact"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="group flex items-center space-x-2 text-[11px] tracking-[0.24em] font-light uppercase py-2 px-4 border border-[#8C6D4F]/50 hover:border-[#D4AF37] text-[#EAD8C7] transition-all duration-300 backdrop-blur-sm ml-auto md:ml-0"
-            style={{ fontFamily: "'Montserrat', sans-serif" }}
-          >
-            <span>LET&apos;S TALK</span>
-            <span className="transform transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-xs">
-              ↗
-            </span>
-          </a>
-        </header>
+      <div className="relative z-10 flex flex-col justify-center h-full w-full px-6 sm:px-12 lg:px-16 pt-20 pb-8 pointer-events-none">
 
         {/* Main Hero Row */}
-        <div className="relative flex flex-col md:flex-row items-center justify-between w-full pt-4 pb-2 my-auto">
-          
+        <div className="relative flex flex-col md:flex-row items-center justify-between w-full my-auto">
+
           {/* LEFT: Balanced Headline & Actions */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             animate="visible"
-            className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[37rem] xl:max-w-[40rem] pointer-events-auto z-20"
+            className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-[37rem] xl:max-w-[40rem] pointer-events-auto relative z-20 text-white"
           >
             {/* Massive Condensed Headline */}
             <motion.div variants={fadeUpVariants} className="relative mb-3.5 select-none">
@@ -177,26 +129,29 @@ export const HeroSection: React.FC = () => {
                   I BUILD
                 </span>
 
-                {/* Line 2:intelligent  */}
+                {/* Line 2: INTELLIGENCE */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
                   INTELLIGENCE
                 </span>
 
-                {/* Line 3: AI systems */}
+                {/* Line 3: AI SYSTEMS */}
                 <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#DFBE8A] via-[#9B7640] to-[#342410] drop-shadow-[0_10px_30px_rgba(155,118,64,0.4)]">
-                AI SYSTEMS
+                  AI SYSTEMS
                 </span>
               </h1>
             </motion.div>
 
-            {/* Subtitle Technologies */}
-            <motion.div variants={fadeUpVariants} className="mb-4">
-              <p
-                className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
-                style={{ fontFamily: "'Montserrat', sans-serif" }}
-              >
-                AI & DATA SCIENCE <span className="text-[#8C6D4F] mx-1">•</span> COMPUTER VISION <span className="text-[#8C6D4F] mx-1">•</span> MACHINE LEARNING 
-              </p>
+            {/* Role Badges / Pills */}
+            <motion.div variants={fadeUpVariants} className="flex flex-wrap gap-2 mb-5">
+              {roleBadges.map((badge) => (
+                <span
+                  key={badge}
+                  className="px-3.5 py-1.5 text-[9px] sm:text-[10px] font-medium tracking-[0.2em] uppercase rounded-full border border-white/10 bg-white/[0.04] text-[#cbb59d] backdrop-blur-sm"
+                  style={{ fontFamily: "'Montserrat', sans-serif" }}
+                >
+                  {badge}
+                </span>
+              ))}
             </motion.div>
 
             {/* 3-Line Description */}
@@ -260,11 +215,11 @@ export const HeroSection: React.FC = () => {
           >
             {/* 1. Quote Mark */}
             <span className="text-xl text-[#C99E5D] leading-none font-serif mb-2">
-              “
+              &ldquo;
             </span>
 
             {/* 2. Compact Two-Line Statement */}
-            <div 
+            <div
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
@@ -276,9 +231,9 @@ export const HeroSection: React.FC = () => {
             <div className="w-28 h-[1px] bg-gradient-to-r from-[#D4AF37] via-[#E8D7C5]/70 to-transparent shadow-[0_0_8px_rgba(212,175,55,0.4)] mb-2" />
 
             {/* 4. Fine Monoline Calligraphy Signature */}
-            <div 
+            <div
               className="text-[2.2rem] text-[#D8AB64] font-normal leading-none -ml-0.5"
-              style={{ 
+              style={{
                 fontFamily: "'Herr Von Muellerhoff', 'Allura', cursive",
                 letterSpacing: '0.04em',
               }}
