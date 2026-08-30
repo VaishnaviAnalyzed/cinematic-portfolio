@@ -31,7 +31,7 @@ const bentoCategories = [
   {
     title: 'MACHINE LEARNING & RL',
     badge: 'INTELLIGENCE',
-    items: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'Reinforcement Learning', 'C++'],
+    items: ['Python', 'scikit-learn', 'Pandas', 'NumPy', 'Reinforcement Learning', 'Matplotlib', 'Scipy'],
     description: 'Experienced in customer segmentation (K-Means/PCA), predictive modeling, hierarchical RL (MAXQ), and core algorithms.',
     stat: 'UNSUPERVISED & RL',
     colSpan: 'lg:col-span-7',
