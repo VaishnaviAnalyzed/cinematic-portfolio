@@ -57,7 +57,51 @@ const projects: Project[] = [
     ],
   },
   {
-    number: '03',
+  number: '03',
+  title: 'Brain Tumor MRI Classification',
+  category: 'DEEP LEARNING / MEDICAL IMAGING',
+  description:
+    'End-to-end deep learning pipeline that classifies brain MRI slices into glioma, meningioma, pituitary tumor, or no tumor. Features a custom CNN built from scratch, transfer-learning backbones (ResNet50, MobileNetV2, InceptionV3, EfficientNetB0), class-weighted training, and a Streamlit app for real-time prediction.',
+  githubUrl: 'https://github.com/VaishnaviAnalyzed/Brain-tumor-analysis',
+  tech: [
+    'Python',
+    'TensorFlow',
+    'Keras',
+    'CNN',
+    'Transfer Learning',
+    'OpenCV',
+    'Streamlit',
+  ],
+  metrics: [
+    { label: 'CLASSES', value: '4 Tumor Categories' },
+    { label: 'MODELS', value: 'Custom CNN + 4 Backbones' },
+    { label: 'DEPLOYMENT', value: 'Streamlit Web App' },
+  ],
+},
+{
+  number: '04',
+  title: 'Cricbuzz LiveStats',
+  category: 'DATA ANALYTICS / SQL DASHBOARD',
+  description:
+    'Multi-page Streamlit dashboard combining live data from the Cricbuzz API with a SQL database. Includes live match scorecards, player leaderboards and ICC rankings, 25 SQL analytics queries from beginner to advanced (window functions, CTEs), and full CRUD operations over a normalized 3NF schema.',
+  githubUrl: 'https://github.com/VaishnaviAnalyzed/cricbuzz_livestats',
+  tech: [
+    'Python',
+    'Streamlit',
+    'SQL',
+    'SQLAlchemy',
+    'SQLite',
+    'REST API',
+    'Pandas',
+  ],
+  metrics: [
+    { label: 'SQL QUERIES', value: '25 Analytics Queries' },
+    { label: 'DATA SOURCE', value: 'Cricbuzz Live API' },
+    { label: 'MODULES', value: 'Live / Stats / SQL / CRUD' },
+  ],
+},
+  {
+    number: '05',
     title: 'Local LLM Runner with Ollama',
     category: 'LOCAL AI / DEEPSEEK & GEMMA',
     description:
@@ -78,7 +122,7 @@ const projects: Project[] = [
     ],
   },
   {
-    number: '04',
+    number: '06',
     title: 'Customer Segmentation Dashboard',
     category: 'DATA SCIENCE / MACHINE LEARNING',
     description:
@@ -100,7 +144,7 @@ const projects: Project[] = [
     ],
   },
   {
-    number: '05',
+    number: '07',
     title: 'Manuscript Layout Region Detection',
     category: 'DOCUMENT AI / COMPUTER VISION',
     description:
@@ -121,7 +165,7 @@ const projects: Project[] = [
     ],
   },
   {
-    number: '06',
+    number: '08',
     title: 'Multimodal AI Workflows with Gemini',
     category: 'GENERATIVE AI / MULTIMODAL SYSTEMS',
     description:
